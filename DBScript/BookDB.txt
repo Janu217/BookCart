@@ -7,11 +7,11 @@ CategoryName varchar(20) NOT NULL
 )  
 GO
 
-INSERT INTO Categories VALUES('Biography');  
-INSERT INTO Categories VALUES('Fiction');  
-INSERT INTO Categories VALUES('Mystery');  
-INSERT INTO Categories VALUES('Fantasy');  
-INSERT INTO Categories VALUES('Romance'); 
+INSERT INTO Categories VALUES('Mobiles');  
+INSERT INTO Categories VALUES('Fashion');  
+INSERT INTO Categories VALUES('Furniture');  
+INSERT INTO Categories VALUES('Services');  
+INSERT INTO Categories VALUES('Bikes'); 
 GO
 --------------------------------------------------------------------------
 CREATE TABLE UserType (  
@@ -35,7 +35,7 @@ UserTypeID int NOT NULL,
 )  
 GO
 
-INSERT INTO UserMaster VALUES('Ankit','Sharma','adminuser','qwerty','Male',1); -- Add the record for Admin user.
+INSERT INTO UserMaster VALUES('test','t','test','test','Male',1); -- Add the record for Admin user.
 ---------------------------------------------------------------------------
 CREATE TABLE Book(
 BookID int IDENTITY(1,1) PRIMARY KEY,  
