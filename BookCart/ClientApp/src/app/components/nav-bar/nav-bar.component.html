@@ -24,9 +24,8 @@
                   [routerLink]='["/Adminlogin"]'>
            Admin Login
           </button>
-          <button mat-button *ngIf="userData.userTypeId==userType.admin" [routerLink]='["/admin/books"]'>
-            Admin
-            Panel
+          <button mat-button [routerLink]='["/admin/books"]'>
+            Add Product
           </button>
 
           <ng-container *ngIf="userData.isLoggedIn">

@@ -29,8 +29,8 @@ const appRoutes: Routes = [
   {
     path: 'admin/books',
     loadChildren: () => import('./admin/admin.module').then(mod => mod.AdminModule),
-    canLoad: [AdminAuthGuard],
-    canActivate: [AdminAuthGuard]
+   // canLoad: [AdminAuthGuard],
+    canActivate: [AuthGuard]
   },
   { path: '**', component: PageNotFoundComponent },
 ];

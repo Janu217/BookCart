@@ -88,7 +88,7 @@ namespace BookCart.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost, DisableRequestSizeLimit]
-        [Authorize(Policy = UserRoles.Admin)]
+       // [Authorize(Policy = UserRoles.Admin)]
         public int Post()
         {
             Book book = JsonConvert.DeserializeObject<Book>(Request.Form["bookFormData"].ToString());
@@ -120,7 +120,7 @@ namespace BookCart.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPut]
-        [Authorize(Policy = UserRoles.Admin)]
+        //[Authorize(Policy = UserRoles.Admin)]
         public int Put()
         {
             Book book = JsonConvert.DeserializeObject<Book>(Request.Form["bookFormData"].ToString());
@@ -153,7 +153,7 @@ namespace BookCart.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
-        [Authorize(Policy = UserRoles.Admin)]
+        //[Authorize(Policy = UserRoles.Admin)]
         public int Delete(int id)
         {
             string coverFileName = _bookService.DeleteBook(id);
