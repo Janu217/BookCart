@@ -1,7 +1,7 @@
 <div class="docs-example-viewer-wrapper">
     <div class="docs-example-viewer-title mat-elevation-z2">
         <div class="docs-example-viewer-title-spacer">
-            <h2>Book Details</h2>
+            <h2>Product Details</h2>
         </div>
     </div>
     <div class="docs-example-viewer-body row" *ngIf="BookDetails$ | async as book">
@@ -17,7 +17,7 @@
                     <td>{{book.title}}</td>
                 </tr>
                 <tr>
-                    <td><strong>Author</strong></td>
+                    <td><strong>Details</strong></td>
                     <td>{{book.author}}</td>
                 </tr>
                 <tr>
@@ -38,4 +38,4 @@
     </div>
 </div>
 
-<app-similarbooks [bookId]="bookId"> </app-similarbooks>
+<!--<app-similarbooks [bookId]="bookId"> </app-similarbooks>-->
